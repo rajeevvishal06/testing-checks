@@ -2,4 +2,4 @@ version: 1
 environment: {}
 checks:
   hello:
-    cmd: [ sh, -c, "ls -la | head" ]
+    cmd: ls -la | head
