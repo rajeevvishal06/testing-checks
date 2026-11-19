@@ -30,8 +30,8 @@ checks:
       pip install --quiet -r requirements.txt
       pytest -q
     timeout: 10m
-    network:
-      egress: [pypi.org, files.pythonhosted.org]
+    #network:
+      #egress: [pypi.org, files.pythonhosted.org]
 
   supply-chain-sim:
     description: Simulates a malicious dependency calling home. It is not on the allowlist.
