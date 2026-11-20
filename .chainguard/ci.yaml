@@ -39,4 +39,4 @@ checks:
       python3 scripts/phone_home.py
     network:
       egress: [pypi.org]
-      policy: deny
+      policy: destroy
