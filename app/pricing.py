@@ -1,4 +1,5 @@
 """Tiny pricing module used in the Chainguard Checks lab."""
+import os
 
 
 def apply_discount(price: float, percent: float) -> float:
