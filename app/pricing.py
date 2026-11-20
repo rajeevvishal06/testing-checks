@@ -1,6 +1,7 @@
 """Tiny pricing module used in the Chainguard Checks lab."""
 import os
 
+
 def apply_discount(price: float, percent: float) -> float:
     """Return price after a percentage discount, rounded to cents."""
     if not 0 <= percent <= 100:
