@@ -5,6 +5,10 @@ environment:
     PIP_DISABLE_PIP_VERSION_CHECK: "1"
     TMPDIR: /var/tmp
 checks:
+  # Kept from Scenario 1: a PR can't remove a check that main already runs.
+  hello:
+    cmd: ls -la
+
   lint:
     description: Ruff lint, reported as inline annotations on the PR.
     script: |
